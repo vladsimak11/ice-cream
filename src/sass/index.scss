@@ -1,2 +1,26 @@
-@import './common';
-@import './example';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/placeholder';
+@import './base/container';
+@import './base/common';
+@import './base/button';
+@import './components/mobile-menu';
+@import './components/animation';
+@import './base/modal';
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery-reviews';
+@import './components/contacts';
+@import './components/footer';
+
+@import './components/buy-now-modal';
+@import './components/modal-products';
+@import './components/modal-made';
+@import './components/modal-location';
+@import './components/modal-franchise';

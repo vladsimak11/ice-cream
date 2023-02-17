@@ -1,0 +1,168 @@
+// Buy now modal
+
+%buy-now_before {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: -66px;
+    content: '';
+
+    width: 132px;
+    height: 132px;
+
+    transform: translateX(-50%);
+    border-radius: 98px;
+  }
+
+  %buy-now_after {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: -73px;
+    content: '';
+
+    width: 132px;
+    height: 132px;
+    transform: translateX(-50%);
+    border-radius: 98px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.buy-now {
+  &__choice {
+    position: relative;
+    margin-top: 83px;
+  }
+  
+  &__checkform {
+    display: flex;
+    flex-direction: column;
+    gap: 82px; 
+
+    margin-bottom: 32px;
+  }
+
+  &__checkbox {
+    position: relative;
+    z-index: 4;
+    width: 132px;
+    height: 136px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__check {
+    position: absolute;
+    z-index: 2;
+    appearance: none;
+    opacity: 1;
+
+    height: inherit;
+    width: inherit;
+
+    cursor: $iconCustomPointer, auto;
+
+    border-radius: 16px;
+
+    &--cream {
+      border: 2px solid $green-card-bg;
+      filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+      &:checked {
+        background-color: $green-card-bg;
+        border: none;
+      }
+
+      &::before {
+        @extend %buy-now_before;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+      }
+
+      &::after {
+        @extend %buy-now_after;
+
+        background-image: url('../images/buy-now/ice-cream_mobile@1x.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) { background-image: url('../images/buy-now/ice-cream_mobile@2x.png');
+        }
+      }
+
+    }
+
+    &--coffee {
+      border: 2px solid $yellow-card-bg;
+      box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+
+      &:checked {
+        background-color: $yellow-card-bg;
+        border: none;
+      }
+
+      &::before {
+        @extend %buy-now_before;
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+      }
+
+      &::after {
+        @extend %buy-now_after;
+
+        background-image: url('../images/buy-now/ice-coffee_mobile@1x.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) { background-image: url('../images/buy-now/ice-coffee_mobile@2x.png');
+        }
+      }
+    }
+
+    &--milkshake {
+      border: 2px solid $brown-card-bg;
+      filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+      &:checked {
+        background-color: $brown-card-bg;
+        border: none;
+      }
+
+      &::before {
+        @extend %buy-now_before;
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+      }
+
+      &::after {
+        @extend %buy-now_after;
+
+        background-image: url('../images/buy-now/milkshakes_mobile@1x.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) { background-image: url('../images/buy-now/milkshakes_mobile@2x.png');
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 13px;
+    z-index: 5;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 /16);
+    text-transform: uppercase;
+
+    color: $dark-text-color;
+  }
+
+}

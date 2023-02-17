@@ -1,0 +1,89 @@
+// Contacts
+
+.contacts {
+  background-color: $main-bg-color;
+  padding-bottom: 60px;
+  margin: 0;
+  padding: 70px 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  font-style: normal;
+
+  &--container {
+    margin-top: -420px;
+  }
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+  }
+
+  &__item {
+    background-color: $light-text-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 34px 24px 34px;
+  }
+
+  &__title {
+    display: inline-block;
+    padding: 4px 22px;
+    margin-bottom: 20px;
+
+    border-radius: 4px;
+    background-color: $accent-color;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
+  &-address {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+
+    &__title {
+    margin-bottom: 8px;
+    font-style: normal;
+    }
+
+    &__link {
+      font-style: normal;
+      color: #D6936D;
+    }
+
+  }
+
+  &-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+
+    &__time {
+      color: #ABABAB;
+    }
+  }
+
+  &-phone {
+    margin-bottom: 6px;
+  }
+
+  &__button {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+}

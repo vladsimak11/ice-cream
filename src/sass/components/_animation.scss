@@ -1,0 +1,82 @@
+// Animation
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes gallery_animation {
+  0% {
+      opacity: 1;
+  }
+
+  45% {
+      opacity: 1;
+  }
+
+  55% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}

@@ -1,0 +1,82 @@
+<!-- Buy now modal-->
+
+<div class="modal" data-modal="1">
+  <div class="buy-now">
+    
+    <button class="button button--close js-modal-close" type="button">
+      <svg class="button-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  
+    <h3 class="modal__title">Buy now</h3>
+  
+    <div class="buy-now__choice">
+      <form class="buy-now__checkform">
+        <label class="buy-now__checkbox">
+          <span class="buy-now__subtitle">ice cream</span>
+          <input
+            class="buy-now__check buy-now__check--cream"
+            type="checkbox"
+            name="product"
+            value="ice-cream"
+          >
+        </label>
+
+        <label class="buy-now__checkbox">
+          <span class="buy-now__subtitle">ice coffee</span>
+          <input
+            class="buy-now__check buy-now__check--coffee"
+            type="checkbox"
+            name="product"
+            value="ice coffee"
+          >
+        </label>
+
+        <label class="buy-now__checkbox">
+          <span class="buy-now__subtitle">milkshake</span>
+          <input
+            class="buy-now__check buy-now__check--milkshake"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          >
+        </label>
+      </form>
+    </div>
+  
+    <form>
+      <div class="form-group">
+        <input
+            type="text"
+            name="user_name"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            placeholder="Name"
+          />
+  
+          <input
+            type="tel"
+            name="user_phone"
+            required
+            pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+            placeholder="Phone"
+          />
+  
+          <textarea
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+  
+      <button type="button" class="button button--main center">
+        Submit
+      </button>
+  
+    </form>
+  
+  </div>
+
+</div>
+
+<div class="overlay js-overlay-modal"></div>

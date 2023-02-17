@@ -1,0 +1,62 @@
+<!-- Hero -->
+
+<section class="hero">
+  <div class="container">
+
+    <!-- Title -->
+
+    <h1 class="hero__title">
+      ice cream <br>
+      made with <br>
+      <span class="hero__title-accent">passion</span>
+    </h1>
+
+    <!-- Links -->
+    
+    <ul class="hero__btns">
+      <li>
+        <a class="button button--first" href="">Products</>
+      </li>
+      <li>
+        <a class="button button--transparent" href="">How it&rsquo;s made?</a
+        >
+      </li>
+    </ul>
+
+    <!-- Icecream-cone -->
+
+    <picture>
+
+      <!-- phone -->
+      <source
+        media="(max-width: 767.99px)"
+        srcset="
+          ./images/hero/icecream-cone_mobile@1x.png 1x,
+          ./images/hero/icecream-cone_mobile@2x.png 2x
+        "
+      />
+    
+      <img
+        class="hero__pic-cone"
+        src=" ./images/hero/icecream-cone_mobile@1x.png"
+        alt="Icecream cone"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- Dots -->
+    <picture>
+      <!-- phone -->
+      <source
+        media="(max-width: 767.99px)"
+        srcset="./images/hero/hero-dots_mobile.svg"
+      />
+      <img
+        class="hero__pic-dots"
+        src="./images/hero/hero-dots_mobile.svg"
+        alt="Background dots"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>

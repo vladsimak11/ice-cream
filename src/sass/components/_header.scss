@@ -1,0 +1,53 @@
+// Header
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  height: 62px;
+
+  padding-top: 12px;
+
+  &--shaded {
+    border-bottom: 1px solid rgba($light-text-color, 0.2);
+    background-color: rgba($main-bg-color, 0.75);
+    backdrop-filter: blur(3px);
+    @include transition(background-color);
+    @include transition(backdrop-filter);
+  
+  }
+
+  &--container {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.logo {
+  margin-right: auto;
+  animation: logo 1.5s ease 0s both;
+  &__icon {
+  width: 40px;
+  height: 37px;
+  }
+
+}
+
+.icon {
+
+  &-menu, &-close {
+    fill: currentColor;
+    @include transition(fill);
+
+    animation: right-to-left 1s ease 1000ms both;
+
+    &:hover, &:focus {
+      fill: $dark-text-color;
+      cursor: $iconCustomPointer, auto;
+    }
+  }
+
+}

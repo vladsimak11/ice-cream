@@ -1,0 +1,91 @@
+<!-- Milkshake modal -->
+
+<div class="modal modal-milkshake" data-modal="4">
+  <button class="button button--close js-modal-close" type="button">
+    <svg class="button-icon-close" width="20" height="20">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <h3 class="modal__title">Chocolate icecream</h3>
+
+  <div class="modal-milkshake__illustration brown">
+    <img
+      class="modal-milkshake__image"
+      srcset="
+        ./images/ingredients/milkshake-132.png 132w,
+        ./images/ingredients/milkshake-264.png 264w
+        "
+      sizes="(min-width: 1200px) 264px, (max-width: 1199px) 132px, 100vw" 
+      src="./images/ingredients/milkshake-132.png" 
+      alt="Ice cream"
+    />
+  </div>
+
+  <ul class="calories">
+    <li class="calories__item calories__item--brown">
+      <span class="calories__weight calories-brown">400</span>kcal
+    </li>
+    <li class="calories__item calories__item--brown">
+      <span class="calories__weight calories-brown">5g</span>Prote...
+    </li>
+    <li class="calories__item calories__item--brown">
+      <span class="calories__weight calories-brown">4,2g </span>Fats
+    </li>
+    <li class="calories__item calories__item--brown">
+      <span class="calories__weight calories-brown">45,1g </span>Carbs
+    </li>
+  </ul>
+
+  <h4 class="ingredients-title">Ingredients</h4>
+
+  <div class="ingredients-list">
+    <ul class="ingredients-list__product">
+      <li class="ingredients-list__item">Milk</li>
+      <li class="ingredients-list__item">Belgian chocolate</li>
+      <li class="ingredients-list__item">Cream</li>
+      <li class="ingredients-list__item">Cocoa powder</li>
+      <li class="ingredients-list__item">Sugar</li>
+      <li class="ingredients-list__item">Vanilla sugar</li>
+    </ul>
+    <ul class="ingredients-list__weight">
+      <li class="ingredients-list__item">150ml</li>
+      <li class="ingredients-list__item">15g</li>
+      <li class="ingredients-list__item">220 ml</li>
+      <li class="ingredients-list__item">34g</li>
+      <li class="ingredients-list__item">25g</li>
+      <li class="ingredients-list__item">14g</li>
+    </ul>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <input
+          type="text"
+          name="user_name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          placeholder="Name"
+        />
+
+        <input
+          type="tel"
+          name="user_phone"
+          required
+          pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+          placeholder="Phone"
+        />
+
+        <textarea
+        name="comment"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+
+    <button type="button" class="button button--main center">
+      Submit
+    </button>
+
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
