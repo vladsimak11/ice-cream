@@ -14,12 +14,25 @@
   (min-resolution: 2dppx) { background-image: url('../images/gallery-reviews/gallery-reviews_mobile@2x.png');
   
   }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/gallery-reviews/gallery-reviews_tablet@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { background-image: url('../images/gallery-reviews/gallery-reviews_tablet@2x.png');
+    
+    }
+  }
 }
 
 .gallery {
   position: relative;
   margin: 0 auto;
-  transform: translateY(-32px);
+  transform: translateY(-36px);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-144px);
+  }
 
 }
 
@@ -29,6 +42,10 @@
   border-radius: 8px;
   transform: translateX(-50%);
   transition: opacity 1s $timing-function;
+
+  @media screen and (min-width: $tablet) {
+    border-radius: 18px;
+  }
 
 }
 
@@ -44,6 +61,10 @@
 
 .reviews {
   padding-top: 178px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 265px;
+  }
 
   &__item {
     display: block;
@@ -69,6 +90,16 @@
     line-height: calc(31 / 12);
 
     color: $light-text-color;
+
+    @media screen and (min-width: $tablet) {
+      padding: 28px 80px;
+
+      border-radius: 24px;
+      
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
   }
 
   &__name {
@@ -76,6 +107,13 @@
     font-size: 20px;
     line-height: calc(37 / 20);
     margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
   }
 
   &__pagination {

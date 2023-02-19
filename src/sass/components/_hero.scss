@@ -5,6 +5,11 @@
 
   padding-top: 100px;
   height: 502px;
+
+  @media screen and (min-width: $tablet) {
+    height: 415px;
+    padding-top: 80px;
+  }
   
   background-color: $main-bg-color;
   
@@ -17,6 +22,10 @@
     color: $light-text-color;
     
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+    }
 
     animation: left-to-right 0.75s ease 250ms both;
 
@@ -34,6 +43,47 @@
     animation: opacity 0.75s ease 750ms both;
   }
 
+  &__about {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 190px;
+  margin-top: 39px;
+  width: 150px;
+
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    color: $light-text-color;
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__about-btn {
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    margin-top: 12px;
+  }
+
+  &__icon {
+    fill: $light-text-color;
+
+    @include transition(fill);
+
+    &:hover {
+      fill: #ffffff;
+      cursor: $iconCustomPointer, auto;
+    }
+
+    &:hover {
+      fill: #ffffff;
+      cursor: $iconCustomPointer, auto;
+    }
+  }
+
   &__pic {
 
     &-cone {
@@ -45,6 +95,10 @@
       @media screen and (min-width: $mobile) {
         bottom: 0;
         right: 0;
+      }
+
+      @media screen and (min-width: $tablet) {
+        left: 408px;
       }
     }
 
@@ -60,5 +114,51 @@
         right: 0;
       }
     }
+
+    &-plate {
+      position: absolute;
+      bottom: 10px;
+      left: 32px;
+      z-index: 1;
+  
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+  
+      @media screen and (min-width: $desktop) {
+        bottom: 63px;
+        left: 16px;
+      }
+    }
+  }
+
+  &__numbers {
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 94px;
+    right: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    text-align: right;
+    color: $light-text-color;
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 4px;
+
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    text-transform: uppercase;
+    color: $dark-text-color;
   }
 }

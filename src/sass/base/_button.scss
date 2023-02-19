@@ -12,7 +12,7 @@
   font-family: inherit;
   font-weight: 600;
 
-  &--main, &--locations {
+  &--main, &--locations, &--header, &--mob-menu {
     width: 164px;
     height: 42px;
 
@@ -31,6 +31,19 @@
       background-color: $hover-color;
     }
   }
+
+  &--header {
+    margin-left: 32px;
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }  
+
+  &--mob-menu {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  } 
 
   &--first, &--franchise {
     width: 134px;

@@ -23,9 +23,35 @@
       </li>
     </ul>
 
+    <!-- about -->
+    <div class="hero__about">
+      <p>
+        Ice cream is a frozen dairy dessert obtained by freezing the ice cream mix with continuous agitation.
+      </p>
+      <button type="button" class="hero__about-btn">
+        <svg class="hero__icon" width="40" height="16">
+          <use href="./images/icons.svg#icon-arrow-long"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="hero__numbers">
+      <li><span class="hero__number">16</span> cafes</li>
+      <li><span class="hero__number">23</span> food trucks</li>
+    </ul>
+
     <!-- Icecream-cone -->
 
     <picture>
+
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/icecream-cone_tablet@1x.png 1x,
+          ./images/hero/icecream-cone_tablet@2x.png 2x
+        "
+      />
 
       <!-- phone -->
       <source
@@ -38,14 +64,38 @@
     
       <img
         class="hero__pic-cone"
-        src=" ./images/hero/icecream-cone_mobile@1x.png"
+        src=" ./images/hero/icecream-cone_tablet@1x.png"
         alt="Icecream cone"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- icecream plate -->
+    <picture>
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/plate_tablet@1x.png 1x,
+          ./images/hero/plate_tablet@2x.png 2x
+        "
+      />
+      <img
+        class="hero__pic-plate"
+        src=" ./images/hero/plate_tablet@1x.png"
+        alt="Icecream plate"
         loading="lazy"
       />
     </picture>
 
     <!-- Dots -->
     <picture>
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero-dots_tablet.svg"
+      />
+
       <!-- phone -->
       <source
         media="(max-width: 767.99px)"

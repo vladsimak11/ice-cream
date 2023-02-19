@@ -2,7 +2,7 @@
 
 .about {
   background-color: $main-bg-color;
-  padding-top: 61px;
+  padding-top: 60px;
 
   &__uppertitle {
     font-weight: 700;
@@ -13,6 +13,12 @@
     color: $light-text-color;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: calc(27 /22);
+    }
   }
 
   &__title {
@@ -26,6 +32,25 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 34px;
+      line-height: calc(43 / 34);
+      letter-spacing: 0.06em;
+      margin-bottom: 80px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+
+  &__content {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+    }
   }
 
   &__thumb {
@@ -35,7 +60,16 @@
     border-radius: 50%;
     width: 279px;
     height: 279px;
-    margin-bottom: 62px;
+
+    @media screen and (max-width: 767.98px) {
+      margin: 0 auto 62px auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 330px;
+      height: 330px;
+    }
+
   }
 
   &__image {
@@ -44,6 +78,12 @@
     border-radius: 50%;
     width: 279px;
     height: 279px;
+
+    @media screen and (min-width: $tablet) {
+      width: 330px;
+      height: 330px;
+      top: 26px;
+    }
   }
 
   &__box {
@@ -51,6 +91,13 @@
     padding-right: 30px;
     text-align: center;
     color: $light-text-color;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 334px;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -58,6 +105,10 @@
     line-height: calc(21 /12);
 
     margin-bottom: 4px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &__info {
@@ -65,6 +116,11 @@
     line-height: calc(19 /12);
 
     margin-bottom: 4px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+      line-height: calc(21 /12);
+    }
   }
 
   &__paragraph {
@@ -72,6 +128,10 @@
     line-height: calc(23 /12);
 
     margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
   }
 
 

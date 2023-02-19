@@ -11,8 +11,16 @@
   line-height: calc(22 / 12);
   font-style: normal;
 
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
   &--container {
     margin-top: -420px;
+    @media screen and (min-width: $tablet) {
+      margin-top: -363px;
+    }
   }
 
 
@@ -22,6 +30,10 @@
     justify-content: center;
     gap: 16px;
 
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+
   }
 
   &__item {
@@ -29,6 +41,11 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 34px 24px 34px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 40px 24px 40px 24px;
+      width: 224px;
+    }
   }
 
   &__title {
@@ -42,6 +59,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(14 / 12);
+
+    @media screen and (min-width: $tablet) {
+      padding: 4px 13px;
+      margin-bottom: 32px;
+
+      font-size: 16px;
+      line-height: calc(22 / 16);
+    }
   }
 
   &-address {
@@ -52,6 +77,10 @@
     &__title {
     margin-bottom: 8px;
     font-style: normal;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 12px;
+    }
     }
 
     &__link {
@@ -70,6 +99,11 @@
     border-bottom: 1px solid #E1E1E1;
     padding-bottom: 24px;
 
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+
     &__time {
       color: #ABABAB;
     }
@@ -77,13 +111,26 @@
 
   &-phone {
     margin-bottom: 6px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 4px;
+    }
   }
 
   &__button {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 16px;
+    
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      margin-top: 40px;
+      gap: 16px;
+      
+    }
   }
+
 
 }
