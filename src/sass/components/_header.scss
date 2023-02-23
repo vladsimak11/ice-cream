@@ -6,12 +6,17 @@
   left: 0;
   width: 100%;
   z-index: 11;
-  height: 62px;
+  height: 60px;
 
   padding-top: 12px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
+    height: 86px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 95px;
   }
 
   &--shaded {
@@ -20,12 +25,40 @@
     backdrop-filter: blur(3px);
     @include transition(background-color);
     @include transition(backdrop-filter);
-  
   }
+
 
   &--container {
     display: flex;
     align-items: center;
+  }
+
+  &__nav {
+    margin-right: 205px;
+
+    &-list {
+      display: none;
+
+      @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+    }
+
+    &-link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: $light-text-color;
+      @include transition(color);
+
+      &:hover, &:focus {
+        color: $accent-color;
+        cursor: $iconCustomPointer, auto;
+      }
+    }
+
   }
 
 }
@@ -33,9 +66,21 @@
 .logo {
   margin-right: auto;
   animation: logo 1.5s ease 0s both;
+
   &__icon {
   width: 40px;
   height: 37px;
+
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 60px;
+    height: 65px;
+  }
+
   }
 
 }
@@ -43,6 +88,10 @@
 .icon {
 
   &-menu, &-close {
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+
     fill: currentColor;
     @include transition(fill);
 
@@ -53,5 +102,6 @@
       cursor: $iconCustomPointer, auto;
     }
   }
+
 
 }

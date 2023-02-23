@@ -1,21 +1,21 @@
 <!-- Hero -->
 
 <section class="hero">
-  <div class="container">
+  <div class="container hero--container">
 
     <!-- Title -->
 
     <h1 class="hero__title">
       ice cream <br>
       made with <br>
-      <span class="hero__title-accent">passion</span>
+      passion
     </h1>
 
     <!-- Links -->
     
     <ul class="hero__btns">
       <li>
-        <a class="button button--first" href="">Products</>
+        <a class="button button--first" href="./index.html#products">Products</a>
       </li>
       <li>
         <a class="button button--transparent" href="">How it&rsquo;s made?</a
@@ -43,6 +43,14 @@
     <!-- Icecream-cone -->
 
     <picture>
+      <!-- desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/icecream-cone_desktop@1x.png 1x,
+          ./images/hero/icecream-cone_desktop@2x.png 2x
+        "
+      />
 
       <!-- tablet -->
       <source
@@ -72,6 +80,15 @@
 
     <!-- icecream plate -->
     <picture>
+      <!-- desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/plate_desktop@1x.png 1x,
+          ./images/hero/plate_desktop@2x.png 2x
+        "
+      />
+
       <!-- tablet -->
       <source
         media="(min-width: 768px)"
@@ -80,6 +97,7 @@
           ./images/hero/plate_tablet@2x.png 2x
         "
       />
+
       <img
         class="hero__pic-plate"
         src=" ./images/hero/plate_tablet@1x.png"
@@ -90,6 +108,12 @@
 
     <!-- Dots -->
     <picture>
+      <!-- deskop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="./images/hero/hero-dots_desktop.svg"
+      />
+
       <!-- tablet -->
       <source
         media="(min-width: 768px)"
@@ -103,7 +127,7 @@
       />
       <img
         class="hero__pic-dots"
-        src="./images/hero/hero-dots_mobile.svg"
+        src="./images/hero/hero-dots_tablet.svg"
         alt="Background dots"
         loading="lazy"
       />
