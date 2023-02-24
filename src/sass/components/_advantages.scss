@@ -3,11 +3,17 @@
 .advantages {
   background-color: $main-bg-color;
 
-  padding-top: 142px;
-  padding-bottom: 64px;
+  padding-top: 115px;
+  padding-bottom: 68px;
 
   @media screen and (min-width: $tablet) {
+    padding-top: 142px;
     padding-bottom: 204px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 150px;
+    padding-bottom: 178px;
   }
 
 
@@ -48,6 +54,10 @@
 
       @media screen and (min-width: $tablet) {
         top: -32px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        top: -40px;
       }
     }
 
@@ -93,6 +103,12 @@
       font-size: 48px;
       line-height: calc(59 / 48);
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: calc(71 / 58);
+    }
+
   }
 
   &__text {
@@ -104,6 +120,11 @@
     @media screen and (min-width: $tablet) {
       font-size: 14px;
       line-height: calc(24 / 14);
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(28 / 16);
     }
   }
 }

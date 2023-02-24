@@ -3,6 +3,7 @@
 .about {
   background-color: $main-bg-color;
   padding-top: 60px;
+  padding-bottom: 22px;
 
   &__uppertitle {
     font-weight: 700;
@@ -18,7 +19,17 @@
       font-weight: 800;
       font-size: 22px;
       line-height: calc(27 /22);
+
+      padding-bottom: 26px;
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: calc(37 /30);
+
+      padding-bottom: 39px;
+    }
+
   }
 
   &__title {
@@ -37,10 +48,17 @@
       font-size: 34px;
       line-height: calc(43 / 34);
       letter-spacing: 0.06em;
-      margin-bottom: 80px;
+      margin-bottom: 72px;
       padding-left: 0;
       padding-right: 0;
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: calc(45 / 36);
+      margin-bottom: 82px;
+    }
+
   }
 
 
@@ -51,6 +69,11 @@
       justify-content: center;
       gap: 38px;
     }
+
+    @media screen and (min-width: $desktop) {
+      gap: 109px;
+    }
+
   }
 
   &__thumb {
@@ -70,6 +93,12 @@
       height: 330px;
     }
 
+    @media screen and (min-width: $desktop) {
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+      width: 490px;
+      height: 490px;
+    }
+
   }
 
   &__image {
@@ -84,6 +113,13 @@
       height: 330px;
       top: 26px;
     }
+
+    @media screen and (min-width: $desktop) {
+      width: 490px;
+      height: 490px;
+      top: 39px;
+    }
+
   }
 
   &__box {
@@ -98,16 +134,26 @@
       width: 334px;
       text-align: left;
     }
+
+    @media screen and (min-width: $desktop) {
+      width: 463px;
+    }
+
   }
 
   &__text {
     font-size: 12px;
-    line-height: calc(21 /12);
+    line-height: calc(21 / 12);
 
     margin-bottom: 4px;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(28 / 16);
     }
   }
 
@@ -121,6 +167,12 @@
       margin-bottom: 8px;
       line-height: calc(21 /12);
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: calc(27 / 14);
+    }
+
   }
 
   &__paragraph {
@@ -132,7 +184,13 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 32px;
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: calc(27 / 14);
+
+      margin-bottom: 54px;
+    }
+
   }
-
-
 }
