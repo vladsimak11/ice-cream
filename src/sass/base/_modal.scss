@@ -13,6 +13,16 @@ textarea {
   border-radius: 10px;
   background: rgba(248, 210, 78, 0.1);
 
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    padding: 11px 16px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
   &:focus {
     outline: 0;
     border: 1px solid $accent-color;
@@ -23,6 +33,11 @@ textarea {
 textarea {
   resize: none;
   height: 65px;
+
+  @media screen and (min-width: $tablet) {
+    height: 84px;
+  }
+
 }
 
 .overlay {
@@ -50,7 +65,7 @@ textarea {
   z-index: 21;
 
   width: 280px;
-  height: auto;
+  height: 95%;
 
   background-color: $light-text-color;
   border-radius: 10px;
@@ -58,8 +73,13 @@ textarea {
 
   padding: 28px;
 
-  max-height: 609px;
 	overflow: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    height: auto;
+    padding: 32px 54px;
+  }
 
   &__title {
     font-family: $title-font;
@@ -69,6 +89,14 @@ textarea {
     text-align: center;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+
+      margin-bottom: 32px;
+    }
+
   }
 }
 
@@ -81,6 +109,13 @@ textarea {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding-left: auto;
+  padding-right: auto;
   gap: 12px;
   margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
 }

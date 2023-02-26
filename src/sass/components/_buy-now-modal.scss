@@ -32,6 +32,11 @@
   }
 
 .buy-now {
+
+  @media screen and (min-width: $tablet) {
+    max-height: 644px;
+  }
+
   &__choice {
     position: relative;
     margin-top: 83px;
@@ -43,6 +48,13 @@
     gap: 82px; 
 
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      gap: 32px; 
+
+      margin-bottom: 40px;
+    }
   }
 
   &__checkbox {
