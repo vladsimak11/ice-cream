@@ -3,7 +3,8 @@
 .location {
 
   &--modal {
-
+    height: auto;
+    
     @media screen and (min-width: $tablet) {
       padding-left: 60px;
       padding-right: 60px;

@@ -1,7 +1,9 @@
 // Modla franchise
 .franchise--modal {
-  padding-left: 60px;
-  padding-right: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .franchise-text {
